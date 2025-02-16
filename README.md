@@ -46,4 +46,31 @@ This repository contains a Python implementation of general BCH Codes, developed
 
 ## Usage
 
-The `BCHCode`
+The `BCHCode` class implements BCH codes over any finite field GF(q), where q is a prime number. Here's a basic example:
+
+```python
+from BCHCode import BCHCode
+
+# Create a BCH code with parameters q=2, n=15, d=7, c=1
+bch = BCHCode(2, 15, 7, 1)
+
+# Encode a message
+message = [1, 0, 1, 1, 0]
+code = bch.encode(message)
+
+# Decode (even with errors)
+decoded = bch.decode(code)
+```
+
+For more examples and test cases, including text encoding/decoding, see `BCHCode_Tests.ipynb`.
+
+## Project Overview
+BCH Codes are cyclic error-correcting codes with strong error detection and correction capabilities. This project covers:
+
+- The theoretical basis of BCH Codes, including finite fields  and polynomial codes.
+- Detailed encoding and decoding algorithms.
+- A complete Python implementation with interactive testing.
+
+## Author
+
+Developed by Pedro Costa as part of the Information Theory course at the University of Oxford.
