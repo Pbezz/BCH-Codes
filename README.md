@@ -48,8 +48,6 @@ This repository contains a Python implementation of general BCH Codes, developed
 The `BCHCode` class implements BCH codes over any finite field GF(q), where q is a prime number. Here's a basic example:
 
 ```python
-from BCHCode import BCHCode
-
 # Create a BCH code with parameters q=2, n=15, d=7, c=1
 bch = BCHCode(2, 15, 7, 1)
 
