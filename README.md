@@ -6,7 +6,7 @@ This repository contains a Python implementation of general BCH Codes, developed
 
 - **BCH_Codes_report.pdf** – The full report detailing the theory and practical implementation of BCH Codes.
 - **src/BCHCode.py** – A Python module implementing the `BCHCode` class for encoding and decoding messages.
-- **examples/BCHCode_Tests.ipynb** – A Jupyter Notebook demonstrating tests and examples using the `BCHCode` class.
+- **examples/BCHCode_Examples.ipynb** – A Jupyter Notebook demonstrating tests and examples using the `BCHCode` class.
 
 ## Getting Started
 
@@ -27,16 +27,15 @@ This repository contains a Python implementation of general BCH Codes, developed
    BCH-Codes/
    ├── src/
    │   └── BCHCode.py
-   ├── docs/
-   │   └── BCH_Codes_report.pdf
-   ├── tests/
-   │   └── BCHCode_Tests.ipynb
+   ├── examples/
+   │   └── BCHCode_Examples.ipynb
+   ├── BCH_Codes_report.pdf
    └── README.md
    ```
 
 4. **Run the Examples:**
    ```bash
-   jupyter notebook tests/BCHCode_Tests.ipynb
+   jupyter notebook examples/BCHCode_Examples.ipynb
    ```
 
    Or import the module in your own Python script:
@@ -62,7 +61,7 @@ code = bch.encode(message)
 decoded = bch.decode(code)
 ```
 
-For more examples and test cases, including text encoding/decoding, see `BCHCode_Tests.ipynb`.
+For more examples and test cases, including text encoding/decoding, see `BCHCode_Examples.ipynb`.
 
 ## Project Overview
 BCH Codes are cyclic error-correcting codes with strong error detection and correction capabilities. This project covers:
